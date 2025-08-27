@@ -58,7 +58,7 @@ for (let callbtn of callButton) {
                 <h1 class="font-bold text-[14px] md:text-[16px]">${cardSubTitle}</h1>
                 <span class="text-[#5C5C5C]">${cardHelplineNumber}</span>
               </div>
-              <div><span class="text-[11px] md:text-sm">${new Date().toLocaleTimeString()}</span></div>
+              <div><span class="">${new Date().toLocaleTimeString()}</span></div>
             </div>
         `
         historyContainer.append(newHistoryCard)
