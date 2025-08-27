@@ -35,7 +35,7 @@
           <div
             class="flex items-center gap-1 bg-[#41ff6b1a] px-6 py-2 rounded-3xl"
           >
-            <span>0</span>
+            <span id="heart-count">0</span>
             <img src="./assets/heart.png" alt="" class="w-5" />
           </div>
           <div
@@ -72,14 +72,14 @@
         <section class="w-10/12 container mx-auto grid grid-cols-12 gap-6">
           <!-- Left Side -->
         <section class="col-span-9">
-          <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 rounded-lg my-10">
+          <div class="grid grid-cols-3 gap-3 rounded-lg my-10">
             <!-- Card 1 -->
             <div class="p-6 bg-white shadow-md rounded-xl">
               <div class="flex items-center justify-between">
                 <div class="bg-[#ffe3e2] p-2 rounded-xl">
                   <img src="./assets/emergency.png" alt="" class="w-6" />
                 </div>
-                <span><i class="fa-regular fa-heart text-[#5C5C5C]"></i></span>
+                <span class="heart-icon"><i class="fa-regular fa-heart text-[#5C5C5C]"></i></span>
               </div>
               <div>
                 <h1 class="text-[20px] font-bold mt-4">
@@ -97,12 +97,12 @@
                 </div>
               </div>
               <div class="flex gap-3 items-center">
-                <h1
-                  class="text-[#5c5c5c] px-11 py-2 border-2 border-[#d4d6d5] rounded-xl"
+                <button
+                  class="copy-btn text-[#5c5c5c] w-full flex justify-center items-center gap-1 py-2 border-2 border-[#d4d6d5] rounded-xl"
                 >
                   <i class="fa-regular fa-copy"></i> Copy
-                </h1>
-                <button class="px-13 py-2 bg-[#00a63e] text-white rounded-xl">
+                </button>
+                <button class="call-btn w-full py-2 bg-[#00a63e] text-white rounded-xl">
                   <i class="fa-solid fa-phone"></i> Call
                 </button>
               </div>
@@ -113,7 +113,7 @@
                 <div class="bg-[#dfefff] p-2 rounded-xl">
                   <img src="./assets/police.png" alt="" class="w-6" />
                 </div>
-                <span><i class="fa-regular fa-heart text-[#5C5C5C]"></i></span>
+                <span class="heart-icon"><i class="fa-regular fa-heart text-[#5C5C5C]"></i></span>
               </div>
               <div>
                 <h1 class="text-[20px] font-bold mt-4">
@@ -131,12 +131,12 @@
                 </div>
               </div>
               <div class="flex gap-3 items-center">
-                <h1
-                  class="text-[#5c5c5c] px-11 py-2 border-2 border-[#d4d6d5] rounded-xl"
+                <button
+                  class="copy-btn text-[#5c5c5c] w-full flex justify-center items-center gap-1 py-2 border-2 border-[#d4d6d5] rounded-xl"
                 >
                   <i class="fa-regular fa-copy"></i> Copy
-                </h1>
-                <button class="px-13 py-2 bg-[#00a63e] text-white rounded-xl">
+                </button>
+                <button class="call-btn py-2 w-full bg-[#00a63e] text-white rounded-xl">
                   <i class="fa-solid fa-phone"></i> Call
                 </button>
               </div>
@@ -147,7 +147,7 @@
                 <div class="bg-[#ffe3e2] p-2 rounded-xl">
                   <img src="./assets/fire-service.png" alt="" class="w-6" />
                 </div>
-                <span><i class="fa-regular fa-heart text-[#5C5C5C]"></i></span>
+                <span class="heart-icon"><i class="fa-regular fa-heart text-[#5C5C5C]"></i></span>
               </div>
               <div>
                 <h1 class="text-[20px] font-bold mt-4">Fire Service Number</h1>
@@ -163,12 +163,12 @@
                 </div>
               </div>
               <div class="flex gap-3 items-center">
-                <h1
-                  class="text-[#5c5c5c] px-11 py-2 border-2 border-[#d4d6d5] rounded-xl"
+                <button
+                  class="copy-btn text-[#5c5c5c] py-2 w-full flex justify-center items-center gap-1 border-2 border-[#d4d6d5] rounded-xl"
                 >
                   <i class="fa-regular fa-copy"></i> Copy
-                </h1>
-                <button class="px-13 py-2 bg-[#00a63e] text-white rounded-xl">
+                </button>
+                <button class="call-btn w-full py-2 bg-[#00a63e] text-white rounded-xl">
                   <i class="fa-solid fa-phone"></i> Call
                 </button>
               </div>
@@ -179,7 +179,7 @@
                 <div class="bg-[#ffe3e2] p-2 rounded-xl">
                   <img src="./assets/ambulance.png" alt="" class="w-6" />
                 </div>
-                <span><i class="fa-regular fa-heart text-[#5C5C5C]"></i></span>
+                <span class="heart-icon"><i class="fa-regular fa-heart text-[#5C5C5C]"></i></span>
               </div>
               <div>
                 <h1 class="text-[20px] font-bold mt-4">Ambulance Service</h1>
@@ -195,12 +195,12 @@
                 </div>
               </div>
               <div class="flex gap-3 items-center">
-                <h1
-                  class="text-[#5c5c5c] px-11 py-2 border-2 border-[#d4d6d5] rounded-xl"
+                <button
+                  class="copy-btn text-[#5c5c5c] py-2 w-full flex justify-center items-center gap-1 border-2 border-[#d4d6d5] rounded-xl"
                 >
                   <i class="fa-regular fa-copy"></i> Copy
-                </h1>
-                <button class="px-13 py-2 bg-[#00a63e] text-white rounded-xl">
+                </button>
+                <button class="call-btn w-full py-2 bg-[#00a63e] text-white rounded-xl">
                   <i class="fa-solid fa-phone"></i> Call
                 </button>
               </div>
@@ -211,7 +211,7 @@
                 <div class="bg-[#ffe3e2] p-2 rounded-xl">
                   <img src="./assets/women.png" alt="" class="w-6" />
                 </div>
-                <span><i class="fa-regular fa-heart text-[#5C5C5C]"></i></span>
+                <span class="heart-icon"><i class="fa-regular fa-heart text-[#5C5C5C]"></i></span>
               </div>
               <div>
                 <h1 class="text-[20px] font-bold mt-4">
@@ -229,12 +229,12 @@
                 </div>
               </div>
               <div class="flex gap-3 items-center">
-                <h1
-                  class="text-[#5c5c5c] px-11 py-2 border-2 border-[#d4d6d5] rounded-xl"
+                <button
+                  class="copy-btn text-[#5c5c5c] w-full flex justify-center items-center gap-1 py-2 border-2 border-[#d4d6d5] rounded-xl"
                 >
                   <i class="fa-regular fa-copy"></i> Copy
-                </h1>
-                <button class="px-13 py-2 bg-[#00a63e] text-white rounded-xl">
+                </button>
+                <button class="call-btn w-full py-2 bg-[#00a63e] text-white rounded-xl">
                   <i class="fa-solid fa-phone"></i> Call
                 </button>
               </div>
@@ -245,7 +245,7 @@
                 <div class="bg-[#ffe3e2] p-2 rounded-xl">
                   <img src="./assets/anti corruption.png" alt="" class="w-6" />
                 </div>
-                <span><i class="fa-regular fa-heart text-[#5C5C5C]"></i></span>
+                <span class="heart-icon"><i class="fa-regular fa-heart text-[#5C5C5C]"></i></span>
               </div>
               <div>
                 <h1 class="text-[20px] font-bold mt-4">
@@ -263,12 +263,12 @@
                 </div>
               </div>
               <div class="flex gap-3 items-center">
-                <h1
-                  class="text-[#5c5c5c] px-11 py-2 border-2 border-[#d4d6d5] rounded-xl"
+                <button
+                  class="copy-btn text-[#5c5c5c] w-full flex justify-center items-center gap-1 py-2 border-2 border-[#d4d6d5] rounded-xl"
                 >
                   <i class="fa-regular fa-copy"></i> Copy
-                </h1>
-                <button class="px-13 py-2 bg-[#00a63e] text-white rounded-xl">
+                </button>
+                <button class="call-btn w-full py-2 bg-[#00a63e] text-white rounded-xl">
                   <i class="fa-solid fa-phone"></i> Call
                 </button>
               </div>
@@ -279,7 +279,7 @@
                 <div class="bg-[#ffe3e2] p-2 rounded-xl">
                   <img src="./assets/electricity.png" alt="" class="w-6" />
                 </div>
-                <span><i class="fa-regular fa-heart text-[#5C5C5C]"></i></span>
+                <span class="heart-icon"><i class="fa-regular fa-heart text-[#5C5C5C]"></i></span>
               </div>
               <div>
                 <h1 class="text-[20px] font-bold mt-4">Electricity Helpline</h1>
@@ -296,11 +296,11 @@
               </div>
               <div class="flex gap-3 items-center">
                 <h1
-                  class="text-[#5c5c5c] px-11 py-2 border-2 border-[#d4d6d5] rounded-xl"
+                  class="copy-btn text-[#5c5c5c] w-full flex justify-center items-center gap-1 py-2 border-2 border-[#d4d6d5] rounded-xl"
                 >
                   <i class="fa-regular fa-copy"></i> Copy
                 </h1>
-                <button class="px-13 py-2 bg-[#00a63e] text-white rounded-xl">
+                <button class="call-btn w-full py-2 bg-[#00a63e] text-white rounded-xl">
                   <i class="fa-solid fa-phone"></i> Call
                 </button>
               </div>
@@ -311,7 +311,7 @@
                 <div class="bg-[#ffe3e2] p-2 rounded-xl">
                   <img src="./assets/brac.png" alt="" class="w-6" />
                 </div>
-                <span><i class="fa-regular fa-heart text-[#5C5C5C]"></i></span>
+                <span class="heart-icon"><i class="fa-regular fa-heart text-[#5C5C5C]"></i></span>
               </div>
               <div>
                 <h1 class="text-[20px] font-bold mt-4">Brac Helpline</h1>
@@ -327,12 +327,12 @@
                 </div>
               </div>
               <div class="flex gap-3 items-center">
-                <h1
-                  class="text-[#5c5c5c] px-11 py-2 border-2 border-[#d4d6d5] rounded-xl"
+                <button
+                  class="call-btn text-[#5c5c5c] w-full flex justify-center items-center gap-1 py-2 border-2 border-[#d4d6d5] rounded-xl"
                 >
                   <i class="fa-regular fa-copy"></i> Copy
-                </h1>
-                <button class="px-13 py-2 bg-[#00a63e] text-white rounded-xl">
+                </button>
+                <button class="call-btn w-full py-2 bg-[#00a63e] text-white rounded-xl">
                   <i class="fa-solid fa-phone"></i> Call
                 </button>
               </div>
@@ -341,9 +341,9 @@
             <div class="p-6 bg-white shadow-md rounded-xl">
               <div class="flex items-center justify-between">
                 <div class="bg-[#ffe3e2] p-2 rounded-xl">
-                  <img src="./assets/Bangladesh-Railway.png" alt="" class="w-6" />
+                  <img src="./assets/Bangladesh-Railway.png" alt="" class="w-6 h-6" />
                 </div>
-                <span><i class="fa-regular fa-heart text-[#5C5C5C]"></i></span>
+                <span class="heart-icon"><i class="fa-regular fa-heart text-[#5C5C5C]"></i></span>
               </div>
               <div>
                 <h1 class="text-[20px] font-bold mt-4">
@@ -362,11 +362,11 @@
               </div>
               <div class="flex gap-3 items-center">
                 <h1
-                  class="text-[#5c5c5c] px-11 py-2 border-2 border-[#d4d6d5] rounded-xl"
+                  class="call-btn text-[#5c5c5c] w-full flex justify-center items-center gap-1 py-2 border-2 border-[#d4d6d5] rounded-xl"
                 >
                   <i class="fa-regular fa-copy"></i> Copy
                 </h1>
-                <button class="px-13 py-2 bg-[#00a63e] text-white rounded-xl">
+                <button class="call-btn w-full py-2 bg-[#00a63e] text-white rounded-xl">
                   <i class="fa-solid fa-phone"></i> Call
                 </button>
               </div>
