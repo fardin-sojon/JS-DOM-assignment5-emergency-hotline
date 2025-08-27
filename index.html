@@ -26,7 +26,7 @@
   <body class="inter-font">
     <header>
       <!-- Navbar Section -->
-      <nav class="flex items-center justify-between px-7 py-4">
+      <nav class="flex flex-col gap-4 md:flex-row items-center justify-between px-7 py-4">
         <div class="flex gap-2 items-center">
           <img src="./assets/logo.png" alt="" class="w-9" />
           <h1 class="text-[#006747] font-bold">Emergency <br />Service</h1>
@@ -61,7 +61,7 @@
           <h1 class="text-white text-[25px] font-bold">
             Emergency Service Directory
           </h1>
-          <p class="text-white mt-2">
+          <p class="text-white mt-2 text-[13px] text-[10px] md:text[40px] px-[2px]">
             Government Emergency Services at Your Fingertip – A Project by
             Government of the People’s Republic of Bangladesh
           </p>
@@ -69,10 +69,10 @@
       </section>
     </header>
     <main class="bg-[#f5fff6]">
-      <section class="w-10/12 container mx-auto grid grid-cols-12 gap-6">
+      <section class="w-11/12 md:w-12/12 container mx-auto grid grid-cols-12 gap-6">
         <!-- Left Side -->
-        <section class="col-span-9">
-          <div class="grid grid-cols-3 gap-3 rounded-lg my-10">
+        <section class="col-span-8 md:col-span-9">
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3 rounded-lg my-10">
             <!-- Card 1 -->
             <div class="p-6 bg-white shadow-md rounded-xl">
               <div class="flex items-center justify-between">
@@ -413,13 +413,12 @@
           </div>
         </section>
         <!-- Right Side -->
-        <aside class="bg-white shadow-sm rounded-xl col-span-3 my-10 p-5">
+        <aside class="bg-white shadow-sm rounded-xl col-span-4 md:col-span-3 my-10 p-5">
           <div
-            class="flex justify-between items-center flex-col sm:flex-row md:flex-row"
+            class="flex flex-col md:flex-row gap-2 justify-between items-center"
           >
-            <p class="text-lg">
-              <i class="fa-solid fa-clock-rotate-left text-[#5C5C5C]"></i> Call
-              History
+            <p class="text-[13px] md:text-base">
+              <i class="fa-solid fa-clock-rotate-left text-[#5C5C5C]"></i> Call History
             </p>
             <button id="clear-btn" class="text-white bg-[#00A63E] px-6 py-2 rounded-3xl">
               Clear
