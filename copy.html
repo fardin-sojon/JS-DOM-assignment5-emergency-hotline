@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Copy Text Example</title>
+  <style>
+    .card {
+      border: 1px solid #ccc;
+      padding: 15px;
+      width: 250px;
+      border-radius: 8px;
+      margin: 20px;
+    }
+    button {
+      margin-top: 10px;
+      padding: 6px 12px;
+      border: none;
+      background: #4CAF50;
+      color: white;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    button:hover {
+      background: #45a049;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Card -->
+  <div class="card">
+    <p id="cardText">This is the text that will be copied!</p>
+    <button onclick="copyText()">Copy Text</button>
+  </div>
+
+  <script>
+    function copyText() {
+      // 1. Select the text from the card
+      let text = document.getElementById("cardText").innerText;
+
+      // 2. Copy the text to the clipboard
+      
+    }
+  </script>
+
+</body>
+</html>

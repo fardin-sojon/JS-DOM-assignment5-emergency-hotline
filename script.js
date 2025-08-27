@@ -24,6 +24,11 @@ for(let hearticon of heartIcons){
     })
 }
 
+
+// coins-charge
+let coinBalance = getElementId("coin-balance").innerText
+const coinChange = 20;
+
 // Call 
 const callButton = document.getElementsByClassName("call-btn")
 
@@ -53,15 +58,12 @@ for(let callbtn of callButton){
                 <h1 class="font-bold">${cardSubTitle}</h1>
                 <span class="text-[#5C5C5C]">${cardHelplineNumber}</span>
               </div>
-              <div><span>11:36:58</span></div>
+              <div><span>${new Date().toLocaleTimeString()}</span></div>
             </div>
         `
         historyContainer.append(newHistoryCard)
     })
 }
-// coins-charge
-let coinBalance = getElementId("coin-balance").innerText
-const coinChange = 20;
 
 
 
@@ -70,3 +72,24 @@ getElementId("clear-btn")
     const historyContainer = getElementId("card-hisroty-container")
     historyContainer.innerHTML = "";
 })
+
+
+
+// copy count
+const copyButton = getElementsClass("copy-btn")
+
+for(let copy of copyButton){
+    copy.addEventListener("click", function(){
+        const copyCount = getElementId("copy-count").innerText;
+
+        const currentCopyNumber = Number(copyCount) + 1;
+        getElementId("copy-count").innerText = currentCopyNumber;
+
+        const cardHelplineNumber = copy.parentNode.parentNode.children[2].children[0].innerText
+
+        navigator.clipboard.writeText(cardHelplineNumber)
+        .then(() => {
+          alert("Number Copied: " + cardHelplineNumber);
+        })
+    })
+}
