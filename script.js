@@ -55,7 +55,7 @@ for (let callbtn of callButton) {
         newHistoryCard.innerHTML = `
             <div class="flex flex-col md:flex-col lg:flex-row justify-between items-center bg-[#fafafa] px-3 py-4 rounded-lg mt-4">
               <div class="flex flex-col items-center md:items-crnter lg:items-start">
-                <h1 class="font-bold text-[14px] md:text-[16px]">${cardSubTitle}</h1>
+                <h1 class="font-semibold text-[14px] md:text-[16px]">${cardSubTitle}</h1>
                 <span class="text-[#5C5C5C]">${cardHelplineNumber}</span>
               </div>
               <div><span class="">${new Date().toLocaleTimeString()}</span></div>
