@@ -21,7 +21,7 @@ Answer:
 - Event Bubbling - jokhon kono element a event ghote(jamon: click), tokhon fast a oi element a event ghote. event ta parent thaka document porjonto chole, event ti bubble kora opor a utha.
 4. What is **Event Delegation** in JavaScript? Why is it useful? <br>
 Answer:
-- Event Delegation - enent delegation hossa akta technique, amra parent elememt a akti eventListener bosai, tarpor event bubbing use kora parent er child element a event handle korta pari. 
+- Event Delegation - event delegation hossa akta technique, amra parent elememt a akti eventListener bosai, tarpor event bubbing use kora parent er child element a event handle korta pari. 
 5. What is the difference between **preventDefault() and stopPropagation()** methods? <br>
 Answer:
 - preventDefault() - default action of an element, Example: from subminting stops link opening
@@ -30,8 +30,7 @@ Answer:
 
 
 
-## 🔗 What to Submit
-- [🌐 **Live Link**](https://github.com/fardin-sojon/JS-DOM-assignment5-emergency-hotline.git)
+- [🌐 **Live Link**](https://fardin-sojon.github.io/JS-DOM-assignment5-emergency-hotline/)
 
 
 # Let's Code and Achieve your Dream 🎯
