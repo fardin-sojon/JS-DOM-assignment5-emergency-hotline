@@ -53,7 +53,7 @@ for (let callbtn of callButton) {
 
         const newHistoryCard = document.createElement("div")
         newHistoryCard.innerHTML = `
-            <div class="flex flex-col md:flex-col lg:flex-row justify-between items-center bg-[#fafafa] px-3 py-4 rounded-lg mt-4">
+            <div class="flex flex-col md:flex-col lg:flex-row justify-between items-center bg-[#fafafa] shadow-sm px-3 py-4 rounded-lg mt-4">
               <div class="flex flex-col items-center md:items-crnter lg:items-start">
                 <h1 class="font-semibold text-[14px] md:text-[16px]">${cardSubTitle}</h1>
                 <span class="text-[#5C5C5C]">${cardHelplineNumber}</span>
@@ -66,11 +66,12 @@ for (let callbtn of callButton) {
 }
 
 
-
+// clear btn
 getElementId("clear-btn")
     .addEventListener("click", function () {
         const historyContainer = getElementId("card-hisroty-container")
         historyContainer.innerHTML = "";
+
     })
 
 
